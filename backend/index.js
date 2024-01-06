@@ -54,7 +54,7 @@ mongoose.connect(
     `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.nl6kqw5.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
   )
   .then(() => {
-    app.listen("https://instaplace.vercel.app");
+    app.listen(5000);
     console.log("Connected");
   })
   .catch(err => {
